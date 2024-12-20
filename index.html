@@ -1,0 +1,494 @@
+<!doctype html>
+<lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My tutorial</title>
+    <style>
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    pre{
+        color: red;
+    }
+    h3{
+        text-decoration: underline;
+        color: purple;
+    }
+    header{
+        background-color:aliceblue;
+        padding: 5px;
+    }
+    header div{
+        width: 80%;
+        margin: 0px auto;
+    }
+    .sidebar{
+        list-style-type: none;
+    }
+    .sidebar li{
+        padding: 10px 0px;
+        border-bottom: 1px solid #000;
+    }
+    .sidebar li a{
+        text-transform: capitalize;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .sidebar li a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+
+    .main{
+        width:70%;padding-left:10px;float:left; height:1000px;overflow-y: auto; overflow-x: hidden;
+    }
+    .footer{
+        background-color: #000;
+        color: #FFF;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div>
+            <h1>HTML Tutotorial</h1>
+            <p>HTML, or HyperText Markup Language, is the standard markup language used to create web pages.</p>
+            <p>is the language of the web, used by billions of websites to create the pages you see every day.</p>
+        </div>
+    </header>
+
+    <main>
+    <aside style="width:25%; border-right:1px solid #ccc;float:left">
+    <ul class="sidebar">
+    <li><a href="#basic">basic</a></li>
+    <li><a href="#comments">comments</a></li>
+    <li><a href="#elements">elements</a></li>
+    <li><a href="#attributes">attributes</a></li>
+    <li><a href="#doctypes">doctypes</a></li>
+    <li><a href="#heading">heading</a></li>
+    <li><a href="#paragrap">paragrap</a></li>
+    <li><a href="#links">links</a></li>
+    <li><a href="#images">images</a></li>
+    <li><a href="#semantics">semantics</a></li>
+    <li><a href="#entities">entities</a></li>
+    <li><a href="#symbols">symbols</a></li>
+    <li><a href="#tags">tags</a></li>
+    <li><a href="#tables">tables</a></li>
+    <li><a href="#lists">lists</a></li>
+    <li><a href="#description">description</a></li>
+    <li><a href="#formatting">formatting</a></li>
+    <li><a href="#form-tags">form-tags</a></li>
+    <li><a href="#inline">inline</a></li>
+    <li><a href="#iframe">iframe</a></li>
+    <li><a href="#filepath">filepath</a></li>
+    <li><a href="#favicon">favicon</a></li>
+    <li><a href="#code">code</a></li>
+    <li><a href="#emojis">emojis</a></li>
+    <li><a href="#charsets">charsets</a></li>
+    <li><a href="#encoding">encoding</a></li>
+    <li><a href="#responsive">responsive</a></li>
+    <li><a href="#audio">audio</a></li>
+    <li><a href="#video">video</a></li>
+    <li><a href="#layout">layout</a></li>
+  </ul>
+</aside>
+<section class="main">
+
+    <h3 id="basic">Basic Tags for Document Structure</h3>
+    
+    <pre >
+        &lt;html&gt; &lt;/html&gt;  
+        &lt;head&gt;&lt;/head&gt;   
+        &lt;body&gt;&lt;/body&gt;   
+    </pre>
+
+    <h3 id="comments">Comments</h3>
+    <pre >
+        &lt;!-- This is single line Comment --&gt;  
+
+        &lt;!-- 
+        &lt;p&gt;Multiple line Comment
+            line 1 
+            line 2 
+            line 3 
+        &lt;/p&gt;
+        --&gt;
+    </pre>
+
+
+    <h3 id="elements">Elements</h3>
+    <pre>
+        &lt;tagname&gt; content &lt;/tagname&gt; 
+    </pre>
+    <h4>Examples:</h4>
+    <pre>
+        &lt;p&gt;  &lt;/p&gt; 
+        &lt;h1&gt; &lt;/h1&gt;  
+        &lt;div&gt; &lt;/div&gt; 
+        &lt;table&gt; &lt;/table&gt; 
+    </pre>
+
+    <h3 id="attributes">Attributes</h3>
+    <p>attributes provide additional information about elements within an document.
+        Attribute name defines property and value <b>name="value"</b>
+    </p>
+    <h4>Examples</h4>
+    <p>Here id, hre, class and style are attributes and their values</p>
+        <pre>
+        &lt;a href="tutorial.html"  style="colore:red" id="myid" class="link">prele link&lt;/a>
+        </pre>
+
+    <h3 id="doctypes">Doctypes</h3>
+    <p>It placed at the beginning of documents. It tells the browser about the document type and version.</p>
+    <pre>
+        &lt;!doctype &gt;
+    </pre>
+
+    <h3 id="heading">Heading</h3>
+    <p>SEO is finding structure using headings</p>
+        <pre>
+        <h1>&lt;h1&gt; heading 1 - main heading &lt;h1&gt;</h1>
+        <h2>&lt;h2&gt; heading 2 - sub heading &lt;h2&gt;</h2>
+        <h3>&lt;h3&gt; heading 3 - smaller heading &lt;h3&gt;</h3>
+        <h4>&lt;h4&gt; heading 4 - smaller heading &lt;h4&gt;</h4>
+        <h5>&lt;h5&gt; heading 5 - smaller heading &lt;h5&gt;</h5>
+        <h6>&lt;h6&gt; heading 6 - smaller heading &lt;h6&gt;</h6>
+        </pre>
+    
+    <h3 id="paragrap">Paragraphs</h3>
+    <pre>
+        &lt;p&gt; paragrap &lt;/p&gt;
+    </pre>
+
+    <h3 id="links">Links</h3>
+    <pre>
+        &lt;a href="" target="_blank">Link&lt;/a>
+    </pre>
+    <ul>
+    <li><b>_blank</b>	Opens the linked document in a new window or tab.</li>
+    <li><b>_self</b>	Opens the linked document in the same frame or window as the link. (Default behavior)</li>
+    <li><b>_parent</b>	Opens the linked document in the parent frame.</li>
+    <li><b>_top</b>	Opens the linked document in the full body of the window.</li>
+    <li><b>framename</b>Opens the linked document in a specified frame. The frame’s name is spe</li>
+    </ul>
+
+
+    <h3 id="images">Images</h3>
+    <pre>
+        &lt;img src="" height="" width="" alt="" loading="auto|eager|lazy" />
+    </pre>
+
+    <h3 id="semantics">Semantics</h3>
+    <h4>Semantics Elements</h4>
+    <pre>
+            &lt;article>  
+            &lt;aside>    
+            &lt;details>  
+            &lt;figcaption> 
+            &lt;figure>   
+            &lt;footer> 
+            &lt;header> 
+            &lt;main> 
+            &lt;mark> 
+            &lt;nav> 
+            &lt;section> 
+
+            <div style="border:1px solid #000; width:500px;">
+                &lt;header>
+                    &lt;nav>
+                    &lt;/nav>
+                &lt;/header>
+                &lt;main>
+                    &lt;aside>Side bar&lt;/aside>
+                    &lt;section>
+                        &lt;p>hightlight &lt;mark>text&lt;/mark> &lt;/p>
+                    &lt;/section>
+                    &lt;article>
+                    &lt;/article>
+                &lt;/main>
+                &lt;footer>
+                &lt;/footer>
+            </div>
+
+    </pre>
+
+    <h4>Non-Semantics Elements</h4>
+    <pre>
+        &lt;div>
+    </pre>
+    
+    <h3 id="entities">Entities</h3>
+        <pre>
+            & lt;  <
+        ®	registered trademark	& reg;	®
+        ©	copyright	& copy;	©
+        €	euro	& euro;	
+        etc ...
+        </pre>
+
+
+    <h3 id="symbols">Symbols</h3>
+    <pre>& copy; &copy;</pre>
+
+    <h3 id="tags">Tags</h3>
+    <pre>
+    &lt;p> 
+    &lt;a> 
+    &lt;div> 
+    &lt;span> 
+    &lt;header> 
+    &lt;footer> 
+    &lt;break> 
+    &lt;nav> 
+    &lt;script> 
+    </pre>
+
+
+
+    <h3 id="tables">Tables</h3>
+    <pre>
+        &lt;table> 
+        &lt;tr> 
+        &lt;th> 
+        &lt;td> 
+        &lt;caption> 
+        &lt;thead> 
+        &lt;tbody> 
+        &lt;tfoot> 
+        &lt;col> 
+        &lt;colgroup> 
+        </pre>
+
+        <h3 id="lists">Lists</h3>
+        <h4>Ordered Lists</h4>
+        <pre>
+            list-style-type: lower-roman | upper-roman | decimal 
+            &lt;ol style="list-style-type: lower-roman;">
+                &lt;li>list 1&lt;/li>
+                &lt;li>list 2&lt;/li>
+            &lt;/ol>
+        </pre>
+            <ol style="list-style-type: lower-roman;">
+                <li>list 1</li>
+                <li>list 2</li>
+            </ol>
+
+    <h4>Unordered Lists</h4>
+    <pre>
+        list-style-type: disc | square |  circle | none
+        &lt;ul  style="list-style-type:disc">
+            &lt;li>un ordered list 1&lt;/li>
+            &lt;li>un ordered list 2&lt;/li>
+        &lt;/ul>
+    </pre>
+        <ul  style="list-style-type:disc">
+        <li>un ordered list 1</li>
+        <li>un ordered list 2</li>
+        </ul>
+    
+    
+        <h3 id="description">Description Lists</h3>
+        <pre>
+            &lt;dl>
+                &lt;dt> - data terms</dt>                
+                    &lt;dd>HyperText Markup Language</dd>
+                    &lt;dd>data</dd>
+            &lt;/dl>
+        </pre>
+        <dl>
+            <dt> - data terms</dt>                
+                <dd>HyperText Markup Language</dd>
+                <dd>data</dd            
+        </dl>
+
+
+<h3 id="formatting">Formatting</h3>
+<pre>
+        &lt;i>	<i>Showcases italicized text.</i>
+        &lt;small>	<small>Renders text in a smaller font size.</small>
+        &lt;ins>	<ins>Highlights added or inserted text.</ins>
+        &lt;sub>	sub<sub>Creates subscript text.</sub>
+        &lt;strong>	<strong>Emphasizes text with importance, often in bold.</strong>
+        &lt;b>	    <b>Displays text in a bold format.</b>
+        &lt;mark>	<mark>Accentuates text with a background highlight.</mark>
+        &lt;del>	<del>Strikes through text to signify deletion.</del>
+        &lt;em>	    <em>Adds emphasis to text, commonly styled as italic.</em>
+        &lt;sup>	super<sup>Formats text as superscript.</sup>
+    </pre>
+
+    <h3 id="form-tags">Form tags</h3>
+    <pre>
+            &lt;form>
+            &lt;input> 
+            &lt;label> 
+            &lt;button> 
+            &lt;select> 
+            &lt;textarea> 
+            &lt;option> 
+            &lt;optgroup> 
+            &lt;fieldset> 
+            &lt;legend> 
+            &lt;datalist> 
+            &lt;output>            
+        
+
+    &lt;fieldset>
+        &lt;legend>STUDENT::&lt;/legend>
+        &lt;select>
+            &lt;optgroup label="Programming Languages">
+            &lt;option value="C">C&lt;/option>
+            &lt;option value="C++">Java&lt;/option>
+            &lt;/optgroup>
+        &lt;/select>
+    &lt;/fieldset>
+</pre>
+    <fieldset>
+        <legend>STUDENT::</legend>
+        <select>
+            <optgroup label="Programming Languages">
+            <option value="C">C</option>
+            <option value="C++">Java</option>
+            </optgroup>
+        </select>
+    </fieldset>
+
+    <h3 id="inline">Inline element</h3>
+    <pre>
+    &lt;br>  &lt;button>  &lt;time>     &lt;tt> 
+    &lt;var>    &lt;a>   &lt;abbr>   &lt;acronym> 
+    &lt;b>   &lt;cite>   &lt;code>   &lt;dfn>    &lt;em> 
+    &lt;i> &lt;output>  &lt;q>   &lt;samp>  &lt;script> 
+    &lt;select>  &lt;small>  &lt;span>  &lt;strong> 
+    &lt;sub>  &lt;sup>   &lt;textarea>  &lt;bdo> 
+    &lt;big>  &lt;img> &lt;input>  &lt;kbd> 
+    &lt;label>  &lt;map>   &lt;Object> 
+    </pre>
+    other tags are block elements
+
+    <h3 id="iframe">Iframes</h3>
+    <pre>
+        &lt;iframe src="https://html.spec.whatwg.org/" height="400" width="350" name="iframe_a">&lt;/iframe>
+        &lt;a href="https://www.wikipedia.org/" target="iframe_a">target iframe name&lt;/a>
+    </pre>
+
+    <iframe src="https://html.spec.whatwg.org/" height="400" width="350" name="iframe_a"></iframe>
+    <a href="https://www.wikipedia.org/" target="iframe_a">target iframe name</a>
+
+    <h3 id="filepath">File Paths</h3>
+    <pre>
+        Absolute Paths   https://www.wikipedia.org/
+        Relative paths    ../../home
+    </pre>
+
+   <h3 id="favicon"> Favicon</h3>
+   <pre>
+        &lt;link rel="icon" type="image/png" href="path-to-favicon">
+   </pre>
+   <p>favicon-32.png   32×32 Standard for most desktop browsers.</p>
+
+    <h3 id="code">Computer Code Elements</h3>
+        <pre>
+            &lt;code>	Defines a piece of computer code.
+            &lt;kbd>	Represents keyboard input, often used to display keys or key combinations.
+            &lt;pre>	Displays preformatted text, maintaining its original formatting.
+            &lt;samp>	Displays sample output or examples, typically used in computing contexts.
+            &lt;var>   Denotes variables, often used to represent placeholders or program entities.
+        </pre>	
+
+     <h3 id="emojis">Emojis</h3>
+        <p>&#128516;  & #128516;This is a smiling face with open mouth</p>
+        <p>&#9996; & #9996;This is a victory hand emoji</p>
+        <p>&#8986; & #8986;This is a watch emoji</p>
+
+    <h3 id="charsets">Charsets</h3>
+        <pre>
+            HTML4 &lt;meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+            HTML5 &lt;meta charset="UTF-8">
+        </pre>
+        
+    <h3 id="encoding">Encoding</h3>
+        URL encoding converts special characters in URLs into a format that can be transmitted over the internet, using percent signs (%) followed by hexadecimal codes.
+
+<h3 id="responsive">Responsive Web Design</h3>
+<pre>
+1 &lt;meta name="viewport" content= "width=device-width, initial-scale=1.0">
+2. <img style="width:100%" ..../>
+3.  text responsive   font-size: 5vw;  viewport width  vw
+4. css  @media screen and (max-width: 800px) {
+5. Responsive Layout
+    i) container using flex
+   ii) container{
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+        }
+    iii) multi column
+        container{
+            column-count: 3;                          /* Number of columns*/
+            column-gap: 20px;                      /* Gap between columns*/
+            column-width: 200px;                 /* Width of each column*/
+            /* Other column properties*/
+        }
+    </pre>
+
+    <h3 id="audio">Audio</h3>
+    controls, autoplay, loop and muted are attributes
+        <pre>            
+            &lt;audio controls autoplay loop>
+                &lt;source src="testAudio.mp3"  type="audio/mpeg">
+            &lt;/audio>
+        </pre>
+
+    <h3 id="video">Video</h3>
+    <pre>
+        &lt;video id="myvideo" width="450" height="250" controls preload="auto">
+        &lt;source src="Canvas.move_.mp4" type="video/mp4">
+        &lt;source src="Canvas.move_.ogg" type="video/ogg">
+        &lt;/video>
+    </pre>
+
+    We can change video element using javascript <br />
+    <pre>
+        var testvideo = document.getElementById("myvideo");
+        ToPlay: testvideo.play();
+        ToPause: testvideo.pause();
+        ToCheck: testvideo.paused
+        ChangeWidth: testvideo.width = 600; 
+    </pre>
+    
+    <h3 id="layout">Layout</h3>
+    <pre>
+        &lt;header>, &lt;nav>, &lt;main>, &lt;article>, &lt;section>, &lt;aside>, and &lt;footer>
+    </pre>
+        <header style="border:1px solid #000;padding:30px;text-align:center">
+            header
+        </header>
+        <nav style="border:1px solid #000;padding:20px;text-align:center">Navigationbar</nav>
+        <main style="text-align: center;">
+            <aside style="float:left;width:30%;border:1px solid #000;min-height: 300px;">
+                index
+                <br />aside
+            </aside>
+            <section style="float:left;width:65%;border:1px solid #000;min-height: 300px;">
+                    Content Section
+            </section>
+        </main>
+        <footer style="clear:both;width:100%;border:1px solid #000;min-height: 50px;text-align:center">
+                Footer
+        </footer>
+    </pre>
+</section>
+<div style="clear: both;"></div>
+</main>
+
+
+<footer class="footer">
+    copyrights @ 2024 
+</footer>
+  </body>
+</html>
+
